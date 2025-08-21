@@ -1,7 +1,7 @@
 package com.example.cirucalrcheckfail.service.email;
 
 import com.di.annotation.component.Component;
-import com.example.valid.service.user.UserService;
+import com.example.cirucalrcheckfail.service.user.UserService;
 
 @Component
 public class EmailServiceImpl implements EmailService {

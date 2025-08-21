@@ -2,8 +2,8 @@ package com.example.cirucalrcheckfail.service.user;
 
 
 import com.di.annotation.component.Component;
-import com.example.valid.repository.UserRepository;
-import com.example.valid.service.email.EmailService;
+import com.example.cirucalrcheckfail.repository.UserRepository;
+import com.example.cirucalrcheckfail.service.email.EmailService;
 
 @Component
 public class UserServiceImpl implements UserService {
@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService {
     public String createUser(String name, String email) {
         String user = "1/" + name + "/" + email;
         userRepository.save(user);
-        emailService.sendWelcomeEmail(user);
+        emailService.sendWelcomeEmail(1L);
         return user;
     }
 
