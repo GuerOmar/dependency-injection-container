@@ -1,4 +1,4 @@
-package com.example.service.user;
+package com.example.cirucalrcheckfail.service.user;
 
 public interface UserService {
     String createUser(String name, String email);

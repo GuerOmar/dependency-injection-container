@@ -1,4 +1,4 @@
-package com.example.persistence.repository;
+package com.example.cirucalrcheckfail.repository;
 
 public interface UserRepository {
     void save(String user);

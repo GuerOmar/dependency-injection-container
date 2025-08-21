@@ -1,4 +1,4 @@
-package com.example.persistence.repository;
+package com.example.cirucalrcheckfail.repository;
 
 import com.di.annotation.component.Component;
 

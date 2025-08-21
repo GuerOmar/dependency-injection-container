@@ -1,9 +1,9 @@
-package com.example.service.user;
+package com.example.cirucalrcheckfail.service.user;
 
 
 import com.di.annotation.component.Component;
-import com.example.persistence.repository.UserRepository;
-import com.example.service.email.EmailService;
+import com.example.valid.repository.UserRepository;
+import com.example.valid.service.email.EmailService;
 
 @Component
 public class UserServiceImpl implements UserService {
