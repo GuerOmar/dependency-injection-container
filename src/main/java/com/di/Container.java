@@ -176,16 +176,16 @@ public class Container {
             return;
         }
 
-        // Circular dependency check
-        if (creationStack.contains(type)) {
-            throw new RuntimeException("Circular dependency detected for: " + type.getSimpleName());
-        }
-
         // Determine which class to instantiate
         Class<?> implementationClass = implementationPerInterface.get(type);
 
         if (implementationClass == null) {
             throw new IllegalArgumentException("Type isn't registered: " + type.getSimpleName());
+        }
+
+        // Circular dependency check
+        if (creationStack.contains(implementationClass)) {
+            throw new RuntimeException("Circular dependency detected for: " + type.getSimpleName());
         }
 
         creationStack.add(implementationClass);
